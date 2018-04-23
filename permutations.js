@@ -20,3 +20,4 @@ var permutations = function(string) {
 }
 
 console.log(permutations('abc'))
+
