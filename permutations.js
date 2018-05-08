@@ -10,6 +10,7 @@ var permutations = function(string) {
 		var remain = string.substr(0, i) + string.substr(i+1);
 		// console.log(remain);
 		var innerPerm = permutations(remain);
+		console.log(innerPerm);
 
 		for (var j = 0; j < innerPerm.length; j++) {
 			results.push(first+innerPerm[j])
