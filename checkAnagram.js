@@ -18,6 +18,7 @@ var checkAnagram = function(string1, string2) {
 			hash2[string2[j]]++;
 		}
 	}
+
 	if (Object.keys(hash1).length === 1 && Object.keys(hash2).length === 1) {
 		return hash1[Object.keys(hash1)[0]] - hash2[Object.keys(hash2)[0]];
 	}
@@ -27,12 +28,15 @@ var checkAnagram = function(string1, string2) {
 			count = count - 2;
 		}
 	}
-
+	console.log(hash1, hash2);
 	return count;
 }
+
 console.log(checkAnagram('cde', 'abc'));
 console.log(checkAnagram('bess', 'count'));
 console.log(checkAnagram('ssss', 's'));
-console.log(checkAnagram('ab', 'de'))
-console.log(checkAnagram('ssss', 'ss'))
-console.log(checkAnagram('', ''))
+console.log(checkAnagram('ab', 'de'));
+console.log(checkAnagram('ssss', 'ss'));
+console.log(checkAnagram('', ''));
+console.log(checkAnagram('abc', 'cba'));
+console.log(checkAnagram('ab', 'abc'));

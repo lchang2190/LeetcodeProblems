@@ -63,4 +63,4 @@ bst.push(32);
 
 // console.log(bst);
 console.log(dfs(bst.root));
-console.log(dfsInOrder(bst.root));
+// console.log(dfsInOrder(bst.root));
