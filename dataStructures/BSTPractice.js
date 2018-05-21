@@ -76,6 +76,10 @@ BST.prototype.parent = function(value) {
 	return parent;
 }
 
+BST.prototype.height = function() {
+	
+}
+
 
 
 
