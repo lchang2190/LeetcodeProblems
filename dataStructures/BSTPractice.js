@@ -85,13 +85,10 @@ BST.prototype.height = function() {
 
 var newTree = new BST(10);
 newTree.insert(5);
-newTree.insert(15);
-newTree.insert(20);
-newTree.insert(16);
-newTree.insert(3);
-newTree.insert(6);
-newTree.insert(13);
-// newTree.DFS(newTree);
+newTree.insert(40);
+newTree.insert(11);
+
+newTree.DFS(newTree);
 // console.log(newTree.contains(15));
 // console.log(newTree.parent(6));
-console.log(newTree.right);
+// console.log(newTree);
